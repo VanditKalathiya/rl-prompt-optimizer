@@ -1,9 +1,6 @@
 # Don't upload secret env variables
 .env
 
-# Don't upload saved models
-saved_models/
-
 # Don't upload cached Python files
 __pycache__/
 *.pyc

@@ -1,7 +1,6 @@
 import openai
 import os
 
-# Streamlit loads secrets automatically — no need for dotenv
 openai.api_base = "https://api.groq.com/openai/v1"
 openai.api_key = os.getenv("OPENAI_API_KEY")  # ✅ Must be this
 
