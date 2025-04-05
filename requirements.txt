@@ -7,3 +7,13 @@ openai==0.28
 python-dotenv
 sentencepiece
 stable-baselines3
+streamlit
+torch
+transformers
+gymnasium
+scikit-learn
+openai==0.28
+python-dotenv
+sentencepiece
+stable-baselines3
+vaderSentiment
