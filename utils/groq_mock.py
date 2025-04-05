@@ -1,11 +1,10 @@
 import openai
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-openai.api_key = os.getenv("GROQ_API_KEY")
+# Streamlit loads secrets automatically — no need for dotenv
 openai.api_base = "https://api.groq.com/openai/v1"
+openai.api_key = os.getenv("OPENAI_API_KEY")  # ✅ Must be this
+
 model = os.getenv("GROQ_MODEL", "llama3-8b-8192")
 
 def call_groq_llm(prompt):
